@@ -42,6 +42,14 @@
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/modernizr-1.5.min.js"></script>
+  <!-- and Dean Edwards' IE9.js which makes IE5.5-8 compatible with modern browsers
+       http://code.google.com/p/ie7-js/
+  if you don't want to apply the PNG fix to all PNGs (e.g. ones that are not transparent)
+  you can modify or remove the IE7_PNG_SUFFIX. default: -trans.png
+  -->
+  <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">IE7_PNG_SUFFIX=".png";</script>
+  <![endif]-->
 
 </head>
 
