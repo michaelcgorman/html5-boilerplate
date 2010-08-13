@@ -220,9 +220,9 @@ button {  width: auto; overflow: visible; }
 
   a, a:visited { color: #444 !important; text-decoration: underline; }
 
-  a:after { content: " (" attr(href) ")"; } 
+  a[href]:after { content: " (" attr(href) ")"; } 
 
-  abbr:after { content: " (" attr(title) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
   
   .ir a:after { content: ""; }  /* Don't show links for images */
   
